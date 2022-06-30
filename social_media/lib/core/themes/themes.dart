@@ -7,12 +7,12 @@ class MyTheme {
       scaffoldBackgroundColor: smoothWhite,
       appBarTheme: const AppBarTheme(backgroundColor: smoothWhite),
       iconTheme: const IconThemeData(
-        color: primary,
+        color: softBlack,
       ),
       primaryIconTheme: const IconThemeData(
         color: primary,
       ),
-      drawerTheme: DrawerThemeData(backgroundColor: pureWhite.withOpacity(0.8)),
+      drawerTheme: DrawerThemeData(backgroundColor: pureWhite.withOpacity(0.7)),
       textTheme: TextTheme(
         titleSmall: TextStyle(
             color: pureWhite, fontSize: 18.sm, fontWeight: FontWeight.bold),
@@ -26,31 +26,36 @@ class MyTheme {
             color: softBlack, fontWeight: FontWeight.normal, fontSize: 14.sm),
         bodySmall: TextStyle(
             fontSize: 14.sm, color: pureWhite, fontWeight: FontWeight.w400),
-      ));
+      ),
+      bottomNavigationBarTheme:
+          BottomNavigationBarThemeData(backgroundColor: pureWhite));
   static ThemeData darkTheme = ThemeData(
-      scaffoldBackgroundColor: softBlack,
-      appBarTheme: const AppBarTheme(backgroundColor: softBlack),
-      iconTheme: const IconThemeData(
-        color: smoothWhite,
-      ),
-      drawerTheme: DrawerThemeData(backgroundColor: darkBg.withOpacity(0.6)),
-      primaryIconTheme: const IconThemeData(
-        color: smoothWhite,
-      ),
-      textTheme: TextTheme(
-        titleSmall: TextStyle(
-            color: pureWhite, fontSize: 18.sm, fontWeight: FontWeight.bold),
-        titleLarge: TextStyle(
-            color: pureWhite, fontSize: 35.sm, fontWeight: FontWeight.bold),
-        titleMedium: TextStyle(
-            color: pureWhite, fontSize: 23.sm, fontWeight: FontWeight.bold),
-        bodyLarge: TextStyle(
-            color: pureWhite, fontWeight: FontWeight.w400, fontSize: 17.sm),
-        bodyMedium: TextStyle(
-            color: smoothWhite, fontWeight: FontWeight.normal, fontSize: 14.sm),
-        bodySmall: TextStyle(
-            fontSize: 14.sm, color: pureWhite, fontWeight: FontWeight.w400),
-      ));
+    scaffoldBackgroundColor: softBlack,
+    appBarTheme: const AppBarTheme(backgroundColor: softBlack),
+    iconTheme: const IconThemeData(
+      color: smoothWhite,
+    ),
+    drawerTheme: DrawerThemeData(backgroundColor: darkBg.withOpacity(0.6)),
+    primaryIconTheme: const IconThemeData(
+      color: smoothWhite,
+    ),
+    textTheme: TextTheme(
+      titleSmall: TextStyle(
+          color: pureWhite, fontSize: 18.sm, fontWeight: FontWeight.bold),
+      titleLarge: TextStyle(
+          color: pureWhite, fontSize: 35.sm, fontWeight: FontWeight.bold),
+      titleMedium: TextStyle(
+          color: pureWhite, fontSize: 23.sm, fontWeight: FontWeight.bold),
+      bodyLarge: TextStyle(
+          color: pureWhite, fontWeight: FontWeight.w400, fontSize: 17.sm),
+      bodyMedium: TextStyle(
+          color: smoothWhite, fontWeight: FontWeight.normal, fontSize: 14.sm),
+      bodySmall: TextStyle(
+          fontSize: 14.sm, color: pureWhite, fontWeight: FontWeight.w400),
+    ),
+    bottomNavigationBarTheme:
+        BottomNavigationBarThemeData(backgroundColor: darkBg),
+  );
 }
 
 final titleLarge =
